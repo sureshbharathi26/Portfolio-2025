@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poiret+One&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navigations">
+            <li><a class="home" href="home.html">Home</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a class="projects" href="">Projects</a></li>
+            <li><a href="">Certifications</a></li>
+        </div>
+    </header>
+
+    <main>
+        <div class="heading">
+            <h1>My Projects</h1>
+        </div>
+        <div class="projects-section">
+            <div class="project">
+                <img src="../images/nutrosapien.png" alt="Project 1">
+                <h2 class="project-title">Food Ordering Website</h2>
+                <p class="project-description">Responsive platform with user-friendly interface and real-time order tracking.</p>
+                <div class="project-link">
+                    <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        
+            <div class="project">
+                <img src="../images/moviebookingproject.png" alt="Project 2">
+                <h2 class="project-title">Movie Booking Website</h2>
+                <p class="project-description">Dynamic platform for booking movie tickets with real-time availability</p>
+                <div class="project-link">
+                    <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        
+            <div class="project">
+                <img src="../images/aptitudeproject.png" alt="Project 3">
+                <h2 class="project-title">Quiz Website</h2>
+                <p class="project-description">Quiz Website for practicing the Aptitude Questions</p>
+                <div class="project-link">
+                    <a href="https://github.com/username/project3" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        
+            <div class="project">
+                <img src="../images/doctorai.png" alt="Project 4">
+                <h2 class="project-title">DoctorAi</h2>
+                <p class="project-description">AI-driven medical advice, diagnosis, and recommendations.</p>
+                <div class="project-link">
+                    <a href="https://github.com/username/project4" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            <p><strong>Address:</strong><br>
+            No 11, Ganapathi Nagar, Near Sakthi Nagar, New Vilangudi, Madurai - 625018
+            </p>
+            <p><strong>Phone:</strong><br>
+            <a href="tel:+917550378890">(+91) 7550378890</a>
+            </p>
+            <p><strong>Email:</strong><br>
+            <a href="mailto:djstayin@gmail.com">djstayin@gmail.com</a>
+            </p>
+            <p><strong>LinkedIn:</strong><br>
+            <a href="https://www.linkedin.com/in/sureshbharathi" target="_blank">www.linkedin.com/in/sureshbharathi</a>
+            </p>
+        </address>
+    </footer>
+
+    <!-- JavaScript for Scroll Tracking -->
+    <script>
+        window.addEventListener("scroll", function() {
+            var aboutMeSection = document.querySelector(".aboutme");
+            var aboutMePosition = aboutMeSection.getBoundingClientRect().top;  // Get the position of the About Me section
+            var windowHeight = window.innerHeight;  // Get the height of the viewport
+
+            // Trigger animation when the About Me section is 75% visible in the viewport
+            if (aboutMePosition < windowHeight * 0.75) {
+                aboutMeSection.style.opacity = 1;  // Fade in the About Me content
+                aboutMeSection.style.transform = "translateY(0)";  // Move the content into place
+            } else {
+                aboutMeSection.style.opacity = 0;  // Hide the content
+                aboutMeSection.style.transform = "translateY(50px)";  // Start from below the fold
+            }
+        });
+    </script>
+
+</body>
+</html>
